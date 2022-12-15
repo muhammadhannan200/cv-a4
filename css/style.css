@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    -webkit-print-color-adjust: exact;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --color:#f39242;
+    --second-color:#9d9d9c;
+    --third-color:#f6f6f6;
+    --black-color:#3c3c3b;
+}
+
+
+.A4{
+    background-image: url(../images/Asset1.png) , url(../images/Asset2.png);
+
+    background-repeat: no-repeat; 
+
+    background-position:top left ,right bottom;
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 3rem;
+    
+}
+  
+header{
+
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+
+}
+header .content{
+    flex-basis: 30%;
+}
+header .content img{
+    width: 55%;
+    margin-left: 70px;
+    border: 5px solid var(--color);
+    border-radius: 50%;
+    display: flex;
+    justify-content:space-around;
+
+    align-items: center;
+}
+
+.text{
+  
+    flex-basis: 70%;
+    justify-content: flex-end; 
+    
+     
+}
+.text h1,.text h3{
+    width: fit-content;
+    margin-bottom: 5px;
+}
+.text h1{
+    position: relative;
+    flex-basis: 100%;
+    color: #333;
+    font-size:30px;
+    margin-bottom: 10px;
+}
+.text h1:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color) !important;
+    width: 170px;
+    height: 5px;
+    top: 20px;
+    left: 450px;
+}
+.text h3 {
+    flex-basis: 100%;
+    color: var(--color);
+
+}
+
+
+.text p{
+color: var(--black-color);
+}
+
+.social{
+    background-color: var(--third-color);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social i{
+    color: var(--color);
+}
+.social span{
+    color: var(--black-color);
+    margin-left: 15px;
+    font-weight: 300;
+}
+@media print {
+    .social {
+        padding: 20px;
+    }
+    .social span {
+        font-size: 15px;
+    }
+}
+
+.cv-body {
+  
+
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cv-body .box h3{
+    color: var(--color);
+    margin-bottom: 10px;
+
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 25px;
+}
+.page .col1,.page .col2{
+    flex-basis: 45%;
+}
+
+.cv-body.Experience h2 {
+    margin-left: 32px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.cv-body.Experience h4{
+    color: var(--black-color);
+    padding: 0;
+    margin: 0;
+}
+
+.page .col1 .box {
+    margin-bottom: 40px;
+    border-left: 7px solid var(--color);
+    padding-left: 30px;
+}
+
+.page .col1 .box h3{
+    font-size: 25px;
+    color: var(--color);
+    margin-bottom: 10px;
+}
+
+.page .col1 .box h4{
+    margin-bottom: 10px;
+}
+
+
+
+.cv-body .box p{
+    color: #a0a0a0dd;
+    line-height: 1.4;
+}
+.cv-body.language span:not(:last-child) {
+    display: inline-block;
+}
+
+
+  
+.cv-body.lists ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--color); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+/* .cv-body.lists h2{
+    width: 75%;
+} */
+.col2 .box h3{
+margin-bottom: 10px;
+}
+
+.col2 .education{
+ 
+ 
+}
+.education h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.col2 .box {
+    margin-bottom: 30px;
+}
+.cv-body.language{
+    display: flex;
+    justify-content: space-between;
+}
+.cv-body.language h2 {
+    width: 100%;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.cv-body.language .box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cv-body.language .box h3{
+    color:var(--black-color);
+    color: var(--black-color);
+    font-weight: 300;
+    margin-right: 15px;
+}
+.cv-body.language .box .star{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.cv-body.language .box .star span:last-child{
+    margin-left: 12px;
+}
+.cv-body.lists{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cv-body.lists h2{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.cv-body.lists ul {
+    list-style: none; /* Remove default bullets */
+ 
+  }
+  .cv-body.lists ul li{
+    margin-left: 50px;
+  }
